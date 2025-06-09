@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>박재현 - 포트폴리오</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Arial', sans-serif; line-height: 1.6; background: #f5f5f5; color: #333; }
+    header, footer { background: #222; color: #fff; padding: 1rem 2rem; text-align: center; }
+    nav a { margin: 0 10px; color: #fff; text-decoration: none; }
+    .container { max-width: 960px; margin: auto; padding: 2rem; }
+    h1, h2 { margin-bottom: 1rem; }
+    section { margin-bottom: 3rem; }
+    .skills span { display: inline-block; background: #e0e0e0; padding: 5px 10px; margin: 5px; border-radius: 5px; }
+    .projects article { border: 1px solid #ccc; padding: 1rem; margin-bottom: 1rem; background: #fff; border-radius: 5px; }
+    .contact form input, .contact form textarea {
+      width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px;
+    }
+    .contact form button {
+      background: #333; color: #fff; padding: 10px 20px; border: none; cursor: pointer;
+    }
+    @media (max-width: 600px) {
+      nav a { display: block; margin: 5px 0; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>박재현</h1>
+  <p>Frontend Developer | JavaScript | React</p>
+  <nav>
+    <a href="#about">소개</a>
+    <a href="#skills">기술 스택</a>
+    <a href="#projects">프로젝트</a>
+    <a href="#resume">이력서</a>
+    <a href="#contact">연락처</a>
+  </nav>
+</header>
+
+<main class="container">
+
+  <section id="about">
+    <h2>소개</h2>
+    <p>안녕하세요, 사용자 중심의 UI/UX를 지향하는 프론트엔드 개발자 박재현입니다. 웹 성능 최적화와 React 기반 SPA 개발에 관심이 많으며, 팀워크와 커뮤니케이션을 중시합니다.</p>
+  </section>
+
+  <section id="skills">
+    <h2>기술 스택</h2>
+    <div class="skills">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span>
+      <span>Next.js</span><span>Git</span><span>Figma</span><span>Tailwind CSS</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>프로젝트</h2>
+    <div class="projects">
+      <article>
+        <h3>포트폴리오 웹사이트</h3>
+        <p>React 기반 정적 웹사이트로, 이력서와 프로젝트를 소개하는 목적의 개인 포트폴리오입니다. Vercel을 통해 배포되었습니다.</p>
+        <a href="https://github.com/yourusername/portfolio" target="_blank">GitHub 보기</a>
+      </article>
+      <article>
+        <h3>Todo 앱</h3>
+        <p>React로 제작된 할 일 관리 앱입니다. LocalStorage를 활용해 사용자 데이터가 브라우저에 저장됩니다.</p>
+        <a href="https://github.com/yourusername/todoapp" target="_blank">GitHub 보기</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>이력서</h2>
+    <p><a href="resume.pdf" download>📄 이력서 다운로드 (PDF)</a></p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>연락하기</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="이름" required>
+      <input type="email" name="email" placeholder="이메일" required>
+      <textarea name="message" rows="5" placeholder="메시지 내용" required></textarea>
+      <button type="submit">보내기</button>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2025 박재현. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
